@@ -1,0 +1,57 @@
+1、图像相关的topic :
+/ardrone/image_raw    Image 类型　（由仿真平台发布）
+/fira/front/image_raw　　Image 类型　(由changeCamara程序发布，参赛程序)
+/fira/bottom/image_raw　Image  类型　（由changeCamara程序发布，参赛程序）
+2、摄像头切换服务
+ardrone/togglecam　　　由平台发布，输入类型　Empty ,无返回值，调用该服务既可以切换摄像机
+3、飞机姿态topic  
+/ardrone/navdata   由平台发布，消息格式如下：主要用到的字段有rotZ(偏航角),altd（超声波高度，毫米）
+
+    header: ROS message header
+
+    batteryPercent: The remaining charge of the drone’s battery (%)
+
+    state: The Drone’s current state:
+            0: Unknown
+            1: Inited
+            2: Landed
+            3,7: Flying
+            4: Hovering
+            5: Test (?)
+            6: Taking off
+            8: Landing
+            9: Looping (?)
+
+    rotX: Left/right tilt in degrees (rotation about the X axis)
+
+    rotY: Forward/backward tilt in degrees (rotation about the Y axis)
+
+    rotZ: Orientation in degrees (rotation about the Z axis)
+
+    magX, magY, magZ: Magnetometer readings (AR-Drone 2.0 Only) (TBA: Convention)
+
+    pressure: Pressure sensed by Drone’s barometer (AR-Drone 2.0 Only) (Pa)
+
+    temp : Temperature sensed by Drone’s sensor (AR-Drone 2.0 Only) (TBA: Unit)
+
+    wind_speed: Estimated wind speed (AR-Drone 2.0 Only) (TBA: Unit)
+
+    wind_angle: Estimated wind angle (AR-Drone 2.0 Only) (TBA: Unit)
+
+    wind_comp_angle: Estimated wind angle compensation (AR-Drone 2.0 Only) (TBA: Unit)
+
+    altd: Estimated altitude (mm)
+
+    motor1..4: Motor PWM values
+
+    vx, vy, vz: Linear velocity (mm/s) [TBA: Convention]
+
+    ax, ay, az: Linear acceleration (g) [TBA: Convention]
+
+    tm: Timestamp of the data returned by the Drone returned as number of micro-seconds passed since Drone’s boot-up.
+
+４、飞行控制topic ：
+　　　　　/ardrone/land　(降落)　　　　/ardrone/takeoff　（起飞）  /ardrone/reset （重置） 　由平台发布，消息格式都是Empty
+     /cmd_vel (速度控制)   消息格式Twist　
+
+

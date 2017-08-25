@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="Tower">
+    <static>true</static>
+
+
+    <link name="tower">
+    <pose>0 0 1 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+           	<radius>0.2</radius>
+           	<length>2</length>
+          </cylinder>
+        </geometry>
+       </collision>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            	<radius>0.2</radius>
+           	<length>2</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material
+            </uri>
+            <name>Gazebo/White</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+
+    <link name="box_left">
+      <pose> 0 -0.3 1.8 0 0 0 </pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+        <material>
+           <script>
+               <uri>file://media/materials/scripts/gazebo.material </uri>
+            <name>Gazebo/White</name>
+          </script>
+        </material>
+
+      </visual>
+    </link>
+
+    <link name="box_right">
+      <pose> 0 0.3 1.6 0 0 0 </pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size> 0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/White</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+  
+  </model>
+</sdf>

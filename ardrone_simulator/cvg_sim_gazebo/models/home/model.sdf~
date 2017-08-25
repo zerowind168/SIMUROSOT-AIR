@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version ='1.4'>
+
+<model name='home'>
+      <static>1</static>
+      <link name='field'>
+        <pose>0 0 0.02 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>0.2 0.2</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name='road'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+               <size>0.2 0.2</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://home/materials/scripts/</uri>
+              <uri>model://home/materials/textures/</uri>
+              <name>DroneSim/Home</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+</model>
+</sdf>

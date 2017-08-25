@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="road_obstacle">
+    <static>true</static>
+
+    <link name="obstacle_left">
+    	<pose>0 0 .45  0 0 0 </pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.05  0.05  0.9</size>
+          </box>
+        </geometry>
+       </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05  0.05  0.9</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material
+            </uri>
+            <name>Gazebo/Yellow</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+    <link name="obstacle_right">
+      <pose>1.4 0 0.45  0 0 0 </pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.05  0.05  0.9</size>
+          </box>
+        </geometry>
+       </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05  0.05  0.9</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material
+            </uri>
+            <name>Gazebo/Yellow</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+
+    <link name="obstacle_center">
+      <pose>0.7  0 0.925  0 0 0 </pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1.45  0.05  0.05</size>
+          </box>
+        </geometry>
+       </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>1.45  0.05  0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material
+            </uri>
+            <name>Gazebo/Yellow</name>
+          </script>
+        </material>
+      </visual>
+    </link>  
+
+    <joint name="left_center" type="revolute">
+          <child>obstacle_left</child>
+          <parent>obstacle_center</parent>
+          <axis>
+              <xyz> 0 0 -2</xyz>
+              <limit>
+                <upper>0</upper>
+                <lower>0</lower>
+             </limit>
+          </axis>
+    </joint>
+
+
+    <joint name="right_center" type="revolute">
+      <child>obstacle_right</child>
+      <parent>obstacle_center</parent>
+      <axis>
+        <xyz> 0 0 -2</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+  
+  </model>
+</sdf>

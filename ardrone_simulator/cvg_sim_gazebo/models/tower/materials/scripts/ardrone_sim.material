@@ -1,0 +1,17 @@
+material DroneSim/Tower_qr
+{
+	technique
+	{
+	    pass
+	    {
+	       
+	        texture_unit
+	       {
+	            scale  1 1
+	            texture   tem1.png
+	        }
+	    }
+
+	  
+	}
+}

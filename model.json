@@ -1,0 +1,164 @@
+{
+    "home": {
+        "pose_x":27,
+        "pose_y": 0
+    },
+    "end": {
+        "pose_x": 0,
+        "pose_y": 31
+    },
+"obstacle_v":[{
+ "pose_x": 4.5,
+ "pose_y": 2
+}],
+"obstacle_h":[{
+ "pose_x": -3,
+ "pose_y": 8.25
+}],
+
+    "tower":
+    {
+        "pose_x":39,
+        "pose_y":11
+    },
+
+    "tower_code_v": [
+        {
+            "pose_x":39,
+            "pose_y":10
+        }
+    ],
+
+    "tower_code_h": [
+        {
+            "pose_x":39,
+            "pose_y":10,
+            "pose_z":18
+        },
+        {
+            "pose_x":39,
+            "pose_y":13,
+            "pose_z":16
+        },
+         {
+            "pose_x":39,
+            "pose_y":13,
+            "pose_z":16
+        },
+        {
+            "pose_x":39,
+            "pose_y":27,
+            "pose_z":23
+        },
+        {
+            "pose_x":39,
+            "pose_y":27,
+            "pose_z":28
+        },
+        {
+            "pose_x":41,
+            "pose_y":30,
+            "pose_z":26
+        }
+    ],
+
+    "house":{
+            "pose_x":39,
+            "pose_y":31
+    },
+
+    "road-v": [
+        {
+            "pose_x_min": 8,
+            "pose_y_min": 0,
+            "pose_x_max": 8,
+            "pose_y_max":10
+        },
+        {
+            "pose_x_min": 8,
+            "pose_y_min": 12,
+            "pose_x_max":8,
+            "pose_y_max": 30
+        },
+        {
+            "pose_x_min": 8,
+            "pose_y_min": 32,
+            "pose_x_max": 8,
+            "pose_y_max": 39
+        },
+        {
+            "pose_x_min": 27,
+            "pose_y_min": 1,
+            "pose_x_max": 27,
+            "pose_y_max": 10
+        },
+        {
+            "pose_x_min": 27,
+            "pose_y_min": 12,
+            "pose_x_max": 27,
+            "pose_y_max": 30
+        },
+        {
+            "pose_x_min": 27,
+            "pose_y_min": 32,
+            "pose_x_max": 27,
+            "pose_y_max": 39
+        }
+    ],
+    "road-h": [
+        {
+            "pose_x_min": 0,
+            "pose_y_min": 11,
+            "pose_x_max": 7,
+            "pose_y_max": 11
+        },
+        {
+            "pose_x_min": 9,
+            "pose_y_min": 11,
+            "pose_x_max": 26,
+            "pose_y_max": 11
+        },
+        {
+            "pose_x_min": 28,
+            "pose_y_min": 11,
+            "pose_x_max": 39,
+            "pose_y_max": 11
+        },
+        {
+            "pose_x_min": 1,
+            "pose_y_min": 31,
+            "pose_x_max": 7,
+            "pose_y_max": 31
+        },
+        {
+            "pose_x_min": 9,
+            "pose_y_min": 31,
+            "pose_x_max": 26,
+            "pose_y_max": 31
+        },
+        {
+            "pose_x_min": 28,
+            "pose_y_min": 31,
+            "pose_x_max": 39,
+            "pose_y_max": 31
+        }
+    ],
+    "qr_n":[{
+        "pose_x": 27,
+        "pose_y": 11
+    },
+	{
+        "pose_x": 8,
+        "pose_y": 31
+    }],
+
+    "qr_w": [{
+        "pose_x": 27,
+        "pose_y": 31
+    }],
+    "qr_e": [{
+        "pose_x": 8,
+        "pose_y": 11
+    }]
+
+}

@@ -1,0 +1,17 @@
+<package>
+	<name>ardrone_fira</name>
+	<version>1.0.0</version>
+	<description>
+		Controllers developed for the "Up and flying with the AR.Drone and ROS" tutorial series
+	</description>
+	<maintainer email="mail@mail.com">HubFire</maintainer>
+	
+	<buildtool_depend>catkin</buildtool_depend>
+	
+	<run_depend>ardrone_autonomy</run_depend>
+	
+	<license>BSD</license>
+	<url>http://github.com/HubFire/ardrone_fira</url>
+</package>
+
+

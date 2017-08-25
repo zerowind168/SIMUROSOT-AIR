@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<sdf version ='1.4'>
+
+<model name='white'>
+      <static>1</static>
+      <link name='field'>
+        <pose>0 0 0.01 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>8 8</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+               <size>8 8</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://white/materials/scripts/</uri>
+              <uri>model://white/materials/textures/</uri>
+              <name>DroneSim/White</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+</model>
+</sdf>
