@@ -1,0 +1,11 @@
+[1500350491 688206143] Gazebo multi-robot simulator, version 2.2.3
+Copyright (C) 2012-2014 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+[1500350491 991271123] Init world[myworld]
+[1500350493 599346349] ODE body for link [quadrotor::base_link] does not exist, GetGravityMode returns default of 0
+[1500350493 599407622] ODE body for link [quadrotor::base_link] does not exist, GetKinematic returns default of 0
+[1500350493 599418172] ODE body for link [quadrotor::base_link] does not exist, GetEnabled returns default of 1
+[1500350493 602128175] ODE body for link [quadrotor::base_link] does not exist, unable to respond to OnPoseChange
